@@ -1,0 +1,139 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: public sans;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(79, 79, 255);
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    width: fit-content;
+    box-shadow: 0px 0px 80px rgb(255, 251, 0);
+}
+
+img {
+    height: 100px;
+}
+
+.icon {
+    width: 100px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.detcard {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.dets {
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+button {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid white;
+    color: rgb(79, 79, 255);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.2vw;
+    height: 30px;
+
+}
+
+button:hover {
+    background-color: rgb(25, 163, 218);
+    color: white;
+    transition: all .5s;
+}
+
+input {
+    height: 30px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-size: 3vw;
+}
+
+
+#darkbtn {
+    background-color: white;
+    border: orangered 2px solid;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+    color: orangered;
+}
+
+@media screen and (max-width:800px) {
+    .card {
+        width: 90%;
+    }
+
+
+    button {
+        width: 100%;
+        font-size: 4vw;
+        margin-top: 20px;
+    }
+
+    h3 {
+        font-size: 9vw;
+    }
+
+    p {
+        font-size: 5vw;
+    }
+
+    .dets {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 9vw;
+    }
+
+    #darkbtn {
+        bottom: 5%;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="card">
+        <h1>Weather App</h1>
+
+        <form id="formel">
+            <input type="text" id="cityname" placeholder="City Name">
+            <button id="citybtn">Search</button>
+        </form>
+        <div class="icon">
+            <img src="http://openweathermap.org/img/wn/01d.png" alt="" id="weatherimg">
+        </div>
+        <h3><span id="temp">12</span><sup>o</sup>C</h3>
+        <p id="condition">light rain</p>
+        <div class="detcard">
+            <p class="dets" id="feels">Feels like: 12</p>
+            <p class="dets" id="humid">Humidity: 92%</p>
+            <p class="dets" id="wind">Wind Speed: 8.75m/s</p>
+        </div>
+    </section>
+    <div class="btn"><button id="darkbtn">Dark Mode</button></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
